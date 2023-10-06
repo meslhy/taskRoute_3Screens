@@ -13,21 +13,19 @@ class Screen3 extends StatefulWidget {
 }
 
 class _Screen3State extends State<Screen3> {
-  int currentIndex =0;
+  int currentIndex = 1;
 
   List <Widget> screens = [
-    HomeScreen3(),
     Tab2(),
+    HomeScreen3(),
     Tab3(),
-    Tab4(),
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        toolbarHeight: 100,
-        titleSpacing: 32,
+        toolbarHeight: 60,
         backgroundColor: Colors.transparent,
         elevation: 0.00,
         title: Image.asset("assets/images/screen3_title.png"),
@@ -45,17 +43,16 @@ class _Screen3State extends State<Screen3> {
         setState(() {});
       } ,
       unselectedItemColor: Colors.grey,
-      selectedItemColor: Color(0xff363F72),
+      selectedItemColor: Color(0xff0987adc),
       selectedLabelStyle: TextStyle(
           color: Color(0xff363F72),
           fontWeight: FontWeight.bold,
           fontSize: 15
       ),
       items:[
-        BottomNavigationBarItem(icon:Icon(Icons.home_filled) ,label: "."),
-        BottomNavigationBarItem(icon:Icon(Icons.navigation_outlined) ,label: "."),
-        BottomNavigationBarItem(icon:Icon(Icons.bar_chart) ,label: "."),
-        BottomNavigationBarItem(icon:Icon(Icons.person) ,label: "."),
+        BottomNavigationBarItem(icon:Icon(Icons.calendar_today_outlined) ,label: "Today"),
+        BottomNavigationBarItem(icon:ImageIcon(AssetImage("assets/images/screenOne_BNB_icon2.png")),label: "Insights"),
+        BottomNavigationBarItem(icon:Icon(Icons.chat_bubble_outline) ,label: "Chat"),
       ]
   );
 }
