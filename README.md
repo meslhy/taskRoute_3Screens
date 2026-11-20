@@ -1,16 +1,22 @@
-# ui_task
+# UI Task - 3 Screens
 
-A new Flutter project.
+A Flutter UI practice task: pixel-focused implementations of three app screen designs, built with static widgets and local assets.
+
+## Screens
+
+- **Screen 1:** a mood and meditation onboarding screen with a mood icon row and a bottom navigation bar
+- **Screen 2:** a health and doctor themed screen with inner tabs
+- **Screen 3:** a third screen design with its own tabbed home
+
+## Tech Stack
+
+- **Flutter / Dart**
+- carousel_slider for the sliding content
+- All artwork bundled as local image assets (with 2x and 3x variants)
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```bash
+flutter pub get
+flutter run
+```
